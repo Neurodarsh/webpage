@@ -39,7 +39,6 @@
             <div class="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-600">
                 <a href="#about" class="px-6 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 shadow-md">About Me</a>
                 <a href="#services" class="px-6 py-3 rounded-full text-blue-600 border border-blue-600 bg-white hover:bg-gray-100 transition-colors duration-300 shadow-md">My Expertise</a>
-                <a href="academic.html" class="px-6 py-3 rounded-full text-blue-600 border border-blue-600 bg-white hover:bg-gray-100 transition-colors duration-300 shadow-md">Academic Hub</a>
             </div>
         </div>
     </header>
@@ -94,6 +93,60 @@
                     <p class="text-gray-600">
                         Proficient in surgical and endovascular treatments for cerebral aneurysms, arteriovenous malformations (AVMs), and stroke.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Hub Section -->
+        <section id="academic-discussions" class="bg-gray-50 rounded-3xl p-8 sm:p-12 mb-12 shadow-lg">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">Academic Discussions & Case Reports</h2>
+            <div class="max-w-4xl mx-auto text-lg text-gray-700 space-y-8">
+                <p class="text-center">
+                    This section is for fellow medical professionals to engage in academic discussions and share case reports.
+                </p>
+                
+                <!-- Case Report Discussion -->
+                <div class="bg-white rounded-2xl p-6 shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Case Report Discussion</h3>
+                    <p class="text-gray-600 mb-4">
+                        Please use the form below to share your thoughts and questions on published case reports.
+                        <br> <em>Note: This is a placeholder for a dynamic forum.</em>
+                    </p>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="discussion-name" class="block text-gray-700 font-medium">Your Name</label>
+                            <input type="text" id="discussion-name" name="discussion-name" class="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label for="discussion-message" class="block text-gray-700 font-medium">Your Discussion</label>
+                            <textarea id="discussion-message" name="discussion-message" rows="4" class="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your discussion here"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="px-8 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 font-semibold shadow-md">
+                                Submit Discussion
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Case Report Upload -->
+                <div class="bg-white rounded-2xl p-6 shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Upload Case Reports</h3>
+                    <p class="text-gray-600 mb-4">
+                        Please use the button below to upload your case report documents (e.g., PDF, DOCX).
+                        <br> <em>Note: File uploads require a backend server to process and store the data. This is a visual representation.</em>
+                    </p>
+                    <input type="file" id="case-report-upload" name="case-report-upload" class="block w-full text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                </div>
+                
+                <!-- DICOM & MRI Image Upload -->
+                <div class="bg-white rounded-2xl p-6 shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Upload DICOM & MRI Images</h3>
+                    <p class="text-gray-600 mb-4">
+                        Upload imaging files for academic review. Supported formats include DICOM (.dcm) and common image formats (.jpg, .png).
+                        <br> <em>Note: This functionality requires specialized server-side processing for medical imaging data.</em>
+                    </p>
+                    <input type="file" id="image-upload" name="image-upload" accept=".dcm, .jpg, .jpeg, .png" class="block w-full text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" multiple>
                 </div>
             </div>
         </section>
