@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Hub - Dr. Darshan Belur Yatheesh</title>
+    <title>Dr. Darshan Belur Yatheesh - Neurosurgery</title>
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
     <!-- Tailwind CSS CDN -->
@@ -13,53 +13,144 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
         }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/000000/ffffff?text=Brain+Scan');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="bg-gray-100 antialiased">
 
-    <!-- Header & Navigation -->
-    <header class="bg-white shadow-md">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">Dr. D.B. Yatheesh</a>
-            <a href="index.html" class="px-4 py-2 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 shadow-md">Back to Home</a>
-        </nav>
+    <!-- Header & Hero Section -->
+    <header class="relative overflow-hidden hero-bg">
+        <!-- Dark Overlay for Readability -->
+        <div class="absolute inset-0 z-0 bg-black opacity-60"></div>
+        <div class="relative z-10 container mx-auto px-4 py-16 sm:py-24 md:py-32 flex flex-col items-center text-center animate-fade-in">
+            <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden mb-6 animate-scale-in">
+                <img src="https://placehold.co/128x128/60a5fa/ffffff?text=DBY" alt="Dr. Darshan Belur Yatheesh" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight animate-slide-up">
+                Dr. Darshan Belur Yatheesh
+            </h1>
+            <p class="mt-4 text-xl sm:text-2xl text-gray-200 font-medium animate-slide-up animation-delay-300">
+                M.Ch Neurosurgery
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4 animate-slide-up animation-delay-600">
+                <a href="#about" class="px-6 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 shadow-md">About Me</a>
+                <a href="#services" class="px-6 py-3 rounded-full text-blue-600 border border-blue-600 bg-white hover:bg-gray-100 transition-colors duration-300 shadow-md">My Expertise</a>
+                <a href="academic.html" class="px-6 py-3 rounded-full text-blue-600 border border-blue-600 bg-white hover:bg-gray-100 transition-colors duration-300 shadow-md">Academic Hub</a>
+            </div>
+        </div>
     </header>
 
     <main class="container mx-auto px-4 py-12">
-        <!-- Academic Discussions Section -->
-        <section id="academic-discussions" class="bg-gray-50 rounded-3xl p-8 sm:p-12 mb-12 shadow-lg">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">Academic Discussions & Case Reports</h2>
-            <div class="max-w-4xl mx-auto text-lg text-gray-700 space-y-8">
-                <p class="text-center">
-                    This section is for fellow medical professionals to engage in academic discussions and share case reports.
-                    In a full-fledged application, this would be a dynamic forum.
+        <!-- About Section -->
+        <section id="about" class="bg-white rounded-3xl p-8 sm:p-12 mb-12 shadow-lg animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-6">About Dr. Darshan</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 space-y-4">
+                <p>
+                    Dr. Darshan Belur Yatheesh is a distinguished neurosurgeon with an M.Ch in Neurosurgery. He is committed to providing excellent and compassionate care, leveraging advanced surgical techniques and a patient-first approach to address a wide range of neurological conditions.
                 </p>
-                
-                <!-- Case Report Upload -->
-                <div class="bg-white rounded-2xl p-6 shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Upload Case Reports</h3>
-                    <p class="text-gray-600 mb-4">
-                        Please use the button below to upload your case report documents (e.g., PDF, DOCX).
-                        <br> <em>Note: File uploads require a backend server to process and store the data. This is a visual representation.</em>
+                <p>
+                    With extensive experience in both complex brain and spine surgeries, Dr. Yatheesh is dedicated to staying at the forefront of his field through continuous education and adoption of the latest medical technologies.
+                </p>
+                <p>
+                    He believes in a collaborative model of care, ensuring each patient and their family are fully informed and active participants in their treatment journey, from diagnosis through recovery.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-gray-50 rounded-3xl p-8 sm:p-12 mb-12 shadow-lg animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">Areas of Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Brain Tumors -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 animate-slide-in-left">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Brain Tumor Surgery</h3>
+                    <p class="text-gray-600">
+                        Specializing in the resection of both benign and malignant brain tumors, including gliomas, meningiomas, and pituitary adenomas.
                     </p>
-                    <input type="file" id="case-report-upload" name="case-report-upload" class="block w-full text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
                 </div>
-                
-                <!-- DICOM & MRI Image Upload -->
-                <div class="bg-white rounded-2xl p-6 shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Upload DICOM & MRI Images</h3>
-                    <p class="text-gray-600 mb-4">
-                        Upload imaging files for academic review. Supported formats include DICOM (.dcm) and common image formats (.jpg, .png).
-                        <br> <em>Note: This functionality requires specialized server-side processing for medical imaging data.</em>
+                <!-- Service Card 2: Spinal Surgery -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 animate-slide-in-up">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Complex Spinal Surgery</h3>
+                    <p class="text-gray-600">
+                        Expertise in treating a wide range of spinal conditions, from degenerative disc disease to spinal deformities and tumors.
                     </p>
-                    <input type="file" id="image-upload" name="image-upload" accept=".dcm, .jpg, .jpeg, .png" class="block w-full text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" multiple>
                 </div>
+                <!-- Service Card 3: Vascular Neurosurgery -->
+                <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 animate-slide-in-right">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path><path d="M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Vascular Neurosurgery</h3>
+                    <p class="text-gray-600">
+                        Proficient in surgical and endovascular treatments for cerebral aneurysms, arteriovenous malformations (AVMs), and stroke.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Patient Questions Section -->
+        <section id="patient-questions" class="bg-white rounded-3xl p-8 sm:p-12 mb-12 shadow-lg animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-6">Patient Questions</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 space-y-4">
+                <p>
+                    Please use the form below to submit your non-urgent medical questions. We will respond to your query as soon as possible.
+                </p>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email address">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium">Your Question</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your question here"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="px-8 py-3 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 font-semibold shadow-md">
+                            Submit Question
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="bg-blue-600 text-white rounded-3xl p-8 sm:p-12 shadow-lg animate-fade-in-up">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6">Contact & Appointments</h2>
+            <div class="max-w-2xl mx-auto text-center text-lg space-y-4">
+                <p>
+                    To schedule a consultation or for more information about Dr. Yatheesh's practice, please contact us.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:bydarshan1994@gmail.com" class="px-6 py-3 rounded-full text-blue-600 bg-white hover:bg-gray-100 transition-colors duration-300 font-semibold shadow-md">
+                        Email Us
+                    </a>
+                    <a href="tel:+919740443884" class="px-6 py-3 rounded-full text-white border border-white hover:bg-white hover:text-blue-600 transition-colors duration-300 font-semibold shadow-md">
+                        Call +91-9740443884
+                    </a>
+                </div>
+                <p class="mt-6 text-sm">
+                    123 Main Road, Bengaluru, Karnataka, India
+                </p>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+    <footer class="bg-gray-800 text-gray-300 py-6">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>&copy; 2025 Dr. Darshan Belur Yatheesh. All Rights Reserved.</p>
         </div>
